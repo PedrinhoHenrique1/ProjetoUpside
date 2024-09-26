@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetoUpside
 {
-    public partial class Form1 : Form
+    public partial class Product2 : Form
     {
-        public Form1()
+        public Product2()
         {
             InitializeComponent();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
