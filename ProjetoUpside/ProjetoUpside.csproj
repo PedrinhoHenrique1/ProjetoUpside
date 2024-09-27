@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrinho.Designer.cs">
+      <DependentUpon>Carrinho.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Product3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="View\Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Carrinho.resx">
+      <DependentUpon>Carrinho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Product3.resx">
       <DependentUpon>Product3.cs</DependentUpon>
     </EmbeddedResource>

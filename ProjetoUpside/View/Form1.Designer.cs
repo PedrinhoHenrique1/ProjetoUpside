@@ -48,6 +48,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,16 +84,16 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Location = new System.Drawing.Point(96, 37);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(464, 27);
+            this.textBox1.Size = new System.Drawing.Size(513, 27);
             this.textBox1.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Red;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(659, 22);
+            this.pictureBox3.Location = new System.Drawing.Point(688, 31);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 48);
+            this.pictureBox3.Size = new System.Drawing.Size(33, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -101,9 +102,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Red;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(737, 22);
+            this.pictureBox4.Location = new System.Drawing.Point(739, 31);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox4.Size = new System.Drawing.Size(33, 33);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
@@ -241,18 +242,26 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Red;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(583, 20);
+            this.pictureBox5.Location = new System.Drawing.Point(637, 29);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(32, 35);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 21;
             this.pictureBox5.TabStop = false;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(779, 92);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(21, 527);
+            this.vScrollBar1.TabIndex = 22;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 403);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -309,6 +318,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 
