@@ -41,5 +41,11 @@ namespace ProjetoUpside
             Product3 Product3 = new Product3();
             Product3.ShowDialog();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Carrinho carrinho = new Carrinho();
+            carrinho.ShowDialog();
+        }
     }
 }
