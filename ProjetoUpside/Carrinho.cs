@@ -21,17 +21,25 @@ namespace ProjetoUpside
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             labelQuantity.Text = (int.Parse(labelQuantity.Text) + 1).ToString();
-            string currentValueString = labelPrice.Text.Replace("R$ ", "").Replace(",", ".");
-            if (double.TryParse(currentValueString, out double currentValue))
-            {
-                string newValue = (currentValue + 1199.99).ToString("C"); // formato de moeda
-                labelPrice.Invoke((MethodInvoker)delegate { labelPrice.Text = newValue; });
-            }
+            labelPrice.Text = (double.Parse(labelPrice.Text) + 1199.99).ToString();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-                labelQuantity.Text = (int.Parse(labelQuantity.Text) - 1).ToString();
+            labelQuantity.Text = (double.Parse(labelQuantity.Text) - 1).ToString();
+            if (double.Parse(labelPrice.Text) < 1199.99)
+            {
+                MessageBox.Show("Erro: quantidade inválida.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                labelPrice.Text = (double.Parse(labelPrice.Text) - 1199.99).ToString();
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
