@@ -20,6 +20,7 @@ namespace ProjetoUpside
         private void button10_Click(object sender, EventArgs e)
         {
             this.Close();
+            string Quantidade = button10.Text;
         }
     }
 }
