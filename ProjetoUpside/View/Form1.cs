@@ -47,5 +47,11 @@ namespace ProjetoUpside
             Carrinho carrinho = new Carrinho();
             carrinho.ShowDialog();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.ShowDialog();
+        }
     }
 }

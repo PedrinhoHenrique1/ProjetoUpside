@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -20,12 +20,12 @@ namespace ProjetoUpside
         public void Insert(Product product)
         {
             Cmd.Connection = Con.ReturnConnection();
-            Cmd.CommandText = @"INSERT INTO Product (@IdProduto, @NomeProduto, @Preco, @Quantidade)";
+            Cmd.CommandText = @"INSERT INTO Product VALUES (@IdProduto, @NomeProduto, @Preco, @Quantidade)";
 
-            Cmd.Parameters.AddWithValue("@IdProduto", product.IdProduto);
-            Cmd.Parameters.AddWithValue("@NomeProduto", product.NomeProduto);
-            Cmd.Parameters.AddWithValue("@Preco", product.Preco);
-            Cmd.Parameters.AddWithValue("@Quantidade", product.Quantidade);
+            Cmd.Parameters.AddWithValue("@IdProduto", product.IdProduct);
+            Cmd.Parameters.AddWithValue("@NomeProduto", product.NameProduct);
+            Cmd.Parameters.AddWithValue("@Preco", product.Price);
+            Cmd.Parameters.AddWithValue("@Quantidade", product.Quantity);
 
 
             try

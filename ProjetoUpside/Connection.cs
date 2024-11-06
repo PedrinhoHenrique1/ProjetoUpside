@@ -18,7 +18,7 @@ namespace ProjetoUpside
         public Connection()
         {
             string stringConnection = @"Data Source = " + Server
-                + "; IdProduto = + " + DataBase
+                + "; Initial Catalog = " + DataBase
                 + "; User Id = " + Username
                 + "; Password = " + Password
                 + ";Encrypt = false";

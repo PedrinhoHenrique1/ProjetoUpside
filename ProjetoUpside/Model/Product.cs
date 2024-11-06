@@ -8,9 +8,14 @@ namespace ProjetoUpside
 {
     internal class Product
     {
-        public int IdProduto { get; set; }
-        public string NomeProduto { get; set; }
-        public float Preco { get; set; }
-        public int Quantidade { get; set; }
+        public int IdProduct { get; set; }
+        public string NameProduct { get; set; }
+        public float Price { get; set; }
+        public int Quantity { get; set; }
+        public Product(string name, float price, int quantity) {
+            NameProduct = name;
+            Price = price;
+            Quantity = quantity;
+        }
     }
 }
